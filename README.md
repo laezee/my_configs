@@ -48,7 +48,8 @@ Repo contains:
 	- i stole it and changed some things in styling
 	i dont remember an author ;c it was someone on reddit
 
-7. HYPRLAND ECOSYSTEM
+7. HYPRLAND ECOSYSTEM:
+   
 	1. Hypridle - check comments in config
 	2. Hyprpaper - check env vars in hyprland.conf
 	3. hyprlock - i dont like it but dont feel like changing it rn to match the style ;c
