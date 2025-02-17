@@ -1,0 +1,54 @@
+window {
+    font-size: 20px;
+    font-family: "Roboto Medium";
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 20px;
+    color: white;
+}
+
+#outer-box{
+    border-radius: 10px;
+    padding-bottom: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+
+#entry{
+    margin: 5px 5px;
+    padding-left: 30px;
+    border-radius: 10px;
+
+}
+
+#entry:selected {
+    background-color: rgba(120,120,120,0.8);
+}
+
+#text:selected {
+    color: white;
+}
+
+#input{
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #ffffff;
+    background: grey;
+
+    padding: 5px;
+    box-shadow: none; 
+
+}
+
+#img{
+    padding-right:10px;
+}
+
+
+#expander-box{
+    font-size: 20px;
+    font-family: "Roboto Medium";
+    background-color: transparent;
+    border-radius: 20px;
+    color:white;
+}

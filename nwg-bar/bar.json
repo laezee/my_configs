@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Lock",
+    "exec": "hyprlock",
+    "icon": "/home/patryk/.config/nwg-bar/icons/key.svg"
+  },
+  {
+    "label": "Logout",
+    "exec": "exit",
+    "icon": "/home/patryk/.config/nwg-bar/icons/logout.svg"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/home/patryk/.config/nwg-bar/icons/reboot.svg"
+  },
+  {
+    "label": "Power Off",
+    "exec": "systemctl -i poweroff",
+    "icon": "/home/patryk/.config/nwg-bar/icons/poweroff.svg"
+  },
+  {
+    "label": "None",
+    "exec": "echo 0 > /dev/null",
+    "icon": "/home/patryk/.config/nwg-bar/icons/back.svg"
+  }
+]

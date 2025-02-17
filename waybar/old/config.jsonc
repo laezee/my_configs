@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "fixed-center": true,
+    "spacing": 4,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["battery", "wireplumber", "clock","custom/power"],
+
+
+    "custom/power": {
+        "format" : "⏻ ",
+	"tooltip":false,
+	"on-click":"nwg-bar",
+
+    },
+
+
+    "wireplumber": {
+	"format": "{volume}♫",
+	"format-muted": "{volume}♫",
+	
+    },
+
+
+   "hyprland/workspaces":{
+	"format": "<span color='#ffffff'>{name}: {icon}</span>",
+	"on-click": "activate",
+	"sort-by-number": true,
+	"format-icons":{
+		"active": "",
+		"default": ""
+	},
+
+
+   },
+ 
+   "battery": {
+	"interval":5,				   
+        "format": "{capacity}{icon}",		   
+        "format-icons": ["", "", "", "", ""],
+
+	"tooltip-format": "{timeTo} \nPower usage:   {power}W",
+    },
+
+
+
+    "clock": {
+        "format": "{:%H:%M}  ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "left",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffffff'><b>{}</b></span>",
+                              "days":       "<span color='#ffffff'><b>{}</b></span>",
+                              "weeks":      "<span color='#88ffbb'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff0000'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+
+
+
+}

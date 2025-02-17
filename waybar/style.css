@@ -1,0 +1,20 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+.module{
+	color:black;
+	background:rgba(255,255,255,1);
+	padding-left: 10px;
+	padding-right: 15px;
+	border-radius: 20px;
+}
+

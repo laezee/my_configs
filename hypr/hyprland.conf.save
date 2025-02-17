@@ -1,0 +1,56 @@
+# This is the main configuration file
+# It contains:
+# 1) Setting monitor(s)
+# 2) Setting default programs
+# 3) Autostart operations
+# 4) Setting Environmental Variables
+# 5) pooling rest of config from:
+# 5.1) LooksAndFeels conf file
+# 5.2) Controls config file
+
+
+#--------------------------------------------------------------------------------
+### 1. MONITORS 
+
+monitor=, preferred, auto, 1.2
+
+#--------------------------------------------------------------------------------
+### 2. DEFAULT PROGRAMS
+
+$terminal = kitty
+$fileManager = nautilus
+$menu = wofi --show drun
+$webBrowser = firefox
+
+#--------------------------------------------------------------------------------
+### 3. ENVIRONMENT VARIABLES
+
+env = XCURSOR_SIZE,24
+env = HYPRCURSOR_SIZE,24
+env = HYPRSHOT_DIR, /home/patryk/screenshots
+env = ANI_CLI_DOWNLOAD_DIR, home/patryk/videos/pobrane
+env = WALLPAPERS_DIR, /home/patryk/.config/hypr/wallpapers
+#--------------------------------------------------------------------------------
+
+### 4. AUTOSTART 
+
+### 4.1  STARTUP TERMINAL (just in case)
+ exec-once = $terminal
+
+### 4.2 BAR
+ exec-once = waybar &
+
+### 4.3 WALLPAPER
+ exec-once = hyprpaper &
+
+### 4.3 NOTIFICATION DAEMON
+ exec-once = swaync &
+
+### 4.x - NETWORK CONFIG - TODO
+
+#--------------------------------------------------------------------------------
+### 5. PULLING REST OF CONFIG FILES
+
+source = ~/.config/hypr/hyprFeels.conf
+source = ~/.config/hypr/hyprControl.conf
+
